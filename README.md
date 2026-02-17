@@ -45,7 +45,8 @@ create table Produit (
 
 
 
-<img width="1365" height="648" alt="1" src="https://github.com/user-attachments/assets/31c4fd79-6802-4db1-ae9a-a7b9349c74dd" />
+<img width="1361" height="681" alt="1" src="https://github.com/user-attachments/assets/12f4da8b-c013-407e-82f8-b7274f55c6a7" />
+
 
 
 
@@ -64,7 +65,8 @@ Console:
 
 ------------------------------------------------------------------------
 
-<img width="1368" height="671" alt="2" src="https://github.com/user-attachments/assets/61e62831-9387-4d4f-ad37-93c99f10b5c7" />
+
+<img width="1376" height="792" alt="2" src="https://github.com/user-attachments/assets/04a31ddf-4912-42a6-8178-82ec15aaec47" />
 
 
 ------------------------------------------------------------------------
@@ -84,7 +86,8 @@ Output:
     Produit{id=3, nom='Tablette', prix=299.99}
 
     
-<img width="1366" height="766" alt="3" src="https://github.com/user-attachments/assets/7e41fde2-b3b3-40c0-84f5-0ffc1d307882" />
+<img width="1371" height="771" alt="3" src="https://github.com/user-attachments/assets/8a6fe11f-7a1f-47dc-a977-4da84101787f" />
+
 
 ------------------------------------------------------------------------
 
