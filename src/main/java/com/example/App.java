@@ -29,9 +29,9 @@ public class App {
             em.getTransaction().begin();
 
             // Création de quelques produits
-            Produit p1 = new Produit("Laptop", new BigDecimal("999.99"));
-            Produit p2 = new Produit("Smartphone", new BigDecimal("499.99"));
-            Produit p3 = new Produit("Tablette", new BigDecimal("299.99"));
+            Produit p1 = new Produit("PC", new BigDecimal("7000.99"));
+            Produit p2 = new Produit("TELE", new BigDecimal("5000.99"));
+            Produit p3 = new Produit("PS5", new BigDecimal("3000.99"));
 
             // Persistance des produits
             em.persist(p1);
@@ -39,7 +39,7 @@ public class App {
             em.persist(p3);
 
             em.getTransaction().commit();
-            System.out.println("Produits insérés avec succès !");
+            System.out.println("Les Produits est bien insérés  !");
         } catch (Exception e) {
             if (em.getTransaction().isActive()) {
                 em.getTransaction().rollback();
@@ -57,18 +57,18 @@ public class App {
             List<Produit> produits = em.createQuery("SELECT p FROM Produit p", Produit.class)
                     .getResultList();
 
-            System.out.println("\nListe des produits :");
+            System.out.println("\nLecture des produits :");
             for (Produit produit : produits) {
                 System.out.println(produit);
             }
 
             // Recherche d'un produit par ID
-            System.out.println("\nRecherche du produit avec ID=2 :");
+            System.out.println("\nChercher produit avec ID=2 :");
             Produit produit = em.find(Produit.class, 2L);
             if (produit != null) {
                 System.out.println(produit);
             } else {
-                System.out.println("Produit non trouvé");
+                System.out.println("Produit Introuvable ");
             }
         } finally {
             em.close();
